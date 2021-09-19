@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#7acdfe</color>
+    <color name="colorPrimaryDark">#7acdfe</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffff</color>
+    <color name="blue">#7acdfe</color>
+    <color name="black">#070809</color>
+    <color name="alu">#5CBCC0C0</color>
+    <color name="alua">#A9333636</color>
+    <color name="blueb">#1732E9</color>
+    <color name="red">#FF5722</color>
+    <color name="green">#017005</color>
+    <color name="nun">#00F5F1F1</color>
+    <color name="alublack">#3B3C3C</color>
+    <color name="nunalu">#4D858888</color>
+
+
+</resources>

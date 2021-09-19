@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myclass">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".zpaper"></activity>
+        <activity android:name=".zgamec" />
+        <activity android:name=".zgameb" />
+        <activity android:name=".zgame" />
+        <activity android:name=".zvpage" />
+        <activity android:name=".zppage" />
+        <activity android:name=".zpage" />
+        <activity android:name=".zplesson" />
+        <activity android:name=".zvlesson" />
+        <activity android:name=".zlesson" />
+        <activity android:name=".zsubject" />
+        <activity android:name=".zmenut" />
+        <activity android:name=".zmenue" />
+        <activity android:name=".zmenus" />
+        <activity android:name=".editsubject" />
+        <activity android:name=".dcgame" />
+        <activity android:name=".addgame" />
+        <activity android:name=".gamec" />
+        <activity android:name=".gameb" />
+        <activity android:name=".dcplesson" />
+        <activity android:name=".dclesson" />
+        <activity android:name=".addplesson" />
+        <activity android:name=".addlesson" />
+        <activity android:name=".paper" />
+        <activity android:name=".game" />
+        <activity android:name=".vpage" />
+        <activity android:name=".ppage" />
+        <activity android:name=".page" />
+        <activity android:name=".dcsubject" />
+        <activity android:name=".addsubject" />
+        <activity android:name=".vlesson" />
+        <activity android:name=".lesson" />
+        <activity android:name=".plesson" />
+        <activity android:name=".subject" />
+        <activity android:name=".menut" />
+        <activity android:name=".menue" />
+        <activity android:name=".menus" />
+        <activity android:name=".login" />
+        <activity android:name=".load" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
