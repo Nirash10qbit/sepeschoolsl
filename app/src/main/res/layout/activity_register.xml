@@ -47,7 +47,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3.5"
+        android:layout_weight="3"
         android:orientation="vertical"
         android:background="@drawable/yata">
 
@@ -84,7 +84,7 @@
 
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/lusername"
+                        android:id="@+id/rname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
@@ -96,6 +96,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+
 
 
 
@@ -114,22 +115,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_weight="1.5"
         android:orientation="horizontal">
-        <TextView
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-        </TextView>
-        <TextView
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Forget password?"
-            android:textColor="@color/blue">
+            android:layout_weight="8">
 
-        </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/remail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
@@ -161,7 +188,7 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/lpassword"
+                    android:id="@+id/rpassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="password"
@@ -190,7 +217,7 @@
         android:layout_weight="1">
 
         <ProgressBar
-            android:id="@+id/progressBarlr"
+            android:id="@+id/progressBarr"
             style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -215,22 +242,20 @@
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:background="@drawable/roundbtn"
-            android:text="Sign in"
+            android:text="Sign Up"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:id="@+id/llog"
-            android:onClick="llog"
+            android:id="@+id/register"
+            android:onClick="lregister"
             />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
-
         </LinearLayout>
-
     </LinearLayout>
 
 
@@ -239,7 +264,6 @@
         android:layout_height="0dp"
         android:layout_weight="0.5"
         android:orientation="horizontal"/>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -257,7 +281,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:text="Don't have an Account?"
+            android:text="Do you have an Account?"
             android:layout_gravity="center_vertical">
 
         </TextView>
@@ -265,27 +289,22 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="SignUp"
+            android:text="SignIn"
             android:textColor="@color/blue">
 
         </TextView>
         <TextView
-            android:id="@+id/signup"
+            android:id="@+id/signin"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
         </TextView>
-
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="24dp"
         android:layout_weight="1">
-
-
     </LinearLayout>
-
-
 </LinearLayout>

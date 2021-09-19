@@ -119,7 +119,7 @@ public class addsubject extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Toast.makeText(addsubject.this, "Please check your Interner Connection",Toast.LENGTH_SHORT).show();
+                Toast.makeText(addsubject.this, "Please check your Internet Connection",Toast.LENGTH_SHORT).show();
                 Log.d("VOLLEY", error.getMessage());
                 progressBaradd.setVisibility(View.VISIBLE);
                 Intent intent = new Intent(addsubject.this,addsubject.class);

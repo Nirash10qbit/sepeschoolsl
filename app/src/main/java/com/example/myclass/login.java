@@ -49,8 +49,6 @@ public class login extends AppCompatActivity {
 
     }
 
-
-
     private boolean isValied(String uname, String password) {
 
         if (uname.isEmpty()){
@@ -79,13 +77,21 @@ public class login extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
 
-                if (response.equals("success")) {
 
+                if (response.equals("admin")) {
+                    Toast.makeText(login.this,"admin", Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.VISIBLE);
+                    Intent intent = new Intent(login.this,menus.class);
+                    startActivity(intent);
+
+                }
+                if (response.equals("success")) {
                     progressBar.setVisibility(View.VISIBLE);
                     Intent intent = new Intent(login.this,zmenus.class);
                     startActivity(intent);
 
-                } else {
+                }
+                else {
                     Toast.makeText(login.this,"Invalid User Name or Password", Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.INVISIBLE);
                     Intent intent = new Intent(login.this,login.class);

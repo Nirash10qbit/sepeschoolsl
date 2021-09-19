@@ -56,7 +56,7 @@ public class dclesson extends AppCompatActivity {
         st5 = getIntent().getExtras().getString("CID");
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "https://eschoolsl.000webhostapp.com/deleteless.php?gid="+st1+"&&cid="+st5+"";
+        String url = "https://eschoolslgit1.000webhostapp.com/deleteless.php?gid="+st1+"&&cid="+st5+"";
 
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null,
 

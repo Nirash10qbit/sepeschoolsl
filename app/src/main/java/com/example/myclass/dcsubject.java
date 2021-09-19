@@ -50,7 +50,7 @@ public class dcsubject extends AppCompatActivity {
         st2 = getIntent().getExtras().getString("sid");
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "https://eschoolsl.000webhostapp.com/deletesub.php?sid="+st2+"";
+        String url = "https://eschoolslgit1.000webhostapp.com/deletesub.php?sid="+st2+"";
 
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null,
 
